@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="slide-down">slide-down</button>
+    <button id="slide-up">slide-up</button>
+    <button id="toggle-sliding">toggle-sliding</button>
+    <img src="img/images (4).jpg" alt="">
+    <script src="jquery.js"></script>
+    <script>
+        $('#slide-down').click(function(){
+            $('img').slideDown('fast');
+        });
+        $('#slide-up').click(function(){
+            $('img').slideUp(400);
+        });
+        $('#toggle-sliding').click(function(){
+            $('img').slideToggle('slow');
+        });
+        
+    </script>
+</body>
+</html>

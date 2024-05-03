@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="fade-in">Fade In</button>
+    <button id="fade-out">Fade Out</button>
+    <button id="toggle-fading">toggle-fading</button>
+    <img src="img/butterfly.jpg" alt="hopper">
+    <script src="jquery.js"></script>
+    <script>
+        $('#fade-in').click(function(){
+            $('img').fadeIn('fast');
+        });
+        $('#fade-out').click(function(){
+            $('img').fadeOut(400);
+        });
+        $('#toggle-fading').click(function(){
+            $('img').fadeToggle('slow');
+        });
+    </script>
+</body>
+</html>
